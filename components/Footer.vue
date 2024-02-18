@@ -1,19 +1,13 @@
+<script setup>
+// utils and hooks
+const { navigation } = useConstants();
+const CURRENT_YEAR = new Date().getFullYear();
+</script>
+
 <template>
   <div class="footer-section">
     <footer>
       <div class="social-icons-and-navigation">
-        <!-- nav - start -->
-        <!-- <nav>
-          <NuxtLink
-            v-for="item in navigation"
-            :key="item.id"
-            :href="item.href"
-            class="footerBtn"
-            >{{ item.name }}</NuxtLink
-          >
-        </nav> -->
-        <!-- nav - end -->
-
         <!-- social - start -->
         <div>
           <a href="https://www.instagram.com/yzpo/" aria-label="Instagram" target="_blank" class="footerIcon">
@@ -36,13 +30,8 @@
       </div>
 
       <div class="copyright">
-        © {{ CURRENT_YEAR }} - Present Po Yi Zhi. All rights reserved.
+        © {{ CURRENT_YEAR }} - Present Uriel David. All rights reserved.
       </div>
     </footer>
   </div>
 </template>
-<script setup>
-// utils and hooks
-const { navigation } = useConstants();
-const CURRENT_YEAR = new Date().getFullYear();
-</script>

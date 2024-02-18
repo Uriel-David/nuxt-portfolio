@@ -1,3 +1,62 @@
+<script setup>
+import { Menu, MenuButton, MenuItems, MenuItem } from "@headlessui/vue";
+import { Bars3Icon, MoonIcon, SunIcon } from "@heroicons/vue/24/outline";
+import { gsap } from "gsap";
+import blackWhiteFavicon from "/favicon-bw.png";
+import whiteBlackFavicon from "/favicon-wb.png";
+
+useHead({
+  script: [
+    {
+      children: `if (localStorage.theme === "dark" || (!('theme' in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+      document.documentElement.setAttribute("data-theme", "dark")
+    } else {
+      document.documentElement.removeAttribute("data-theme")
+    }`,
+    },
+  ],
+});
+
+const { enabled, toggleTheme } = useTheme();
+const { trackTransitionCompleted, transitionCompletedOnce } =
+  useTransitionTracking();
+const { navigation } = useConstants();
+let loading = ref(transitionCompletedOnce.value ? false : true);
+const navBgTextColor = ref("bg-black text-white");
+const logo = ref(whiteBlackFavicon);
+
+// animation
+const before = (el) => {
+  gsap.set(el, {
+    opacity: 0,
+  });
+};
+const entering = (el, done) => {
+  gsap.to(el, {
+    opacity: 1,
+    duration: 0.8,
+    delay: el.dataset.index * 0.2,
+    onComplete: done,
+  });
+};
+
+watchEffect(() => {
+  navBgTextColor.value = "bg-white text-black dark:bg-[#121212]";
+  logo.value = blackWhiteFavicon;
+
+  if (enabled.value) {
+    logo.value = whiteBlackFavicon;
+  }
+});
+
+onMounted(() => {
+  loading.value = false;
+  setTimeout(() => {
+    trackTransitionCompleted();
+  }, 3000);
+});
+</script>
+
 <template>
   <nav id="nav-bar" class="navPadding" :class="navBgTextColor" style="height: 70px">
     <div class="lg:w-1/12">
@@ -49,116 +108,7 @@
     </div>
   </nav>
 </template>
-<script setup>
-import { Menu, MenuButton, MenuItems, MenuItem } from "@headlessui/vue";
-import { Bars3Icon, MoonIcon, SunIcon } from "@heroicons/vue/24/outline";
-import { gsap } from "gsap";
-import blackWhiteFavicon from "/favicon-bw.png";
-import whiteBlackFavicon from "/favicon-wb.png";
 
-useHead({
-  script: [
-    {
-      children: `if (localStorage.theme === "dark" || (!('theme' in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-      document.documentElement.setAttribute("data-theme", "dark")
-    } else {
-      document.documentElement.removeAttribute("data-theme")
-    }`,
-    },
-  ],
-});
-
-const { enabled, toggleTheme } = useTheme();
-// const route = useRoute();
-// const { scrollTop } = useScrollToTop();
-// const { trackNavBarPosition, currentOffsetHeight } = useTrackNavBar();
-const { trackTransitionCompleted, transitionCompletedOnce } =
-  useTransitionTracking();
-const { navigation } = useConstants();
-let loading = ref(transitionCompletedOnce.value ? false : true);
-// const screenHeight = ref(0);
-// const heightOfNav = ref(0);
-// const currentScreenWidth = ref(0);
-const navBgTextColor = ref("bg-black text-white");
-const logo = ref(whiteBlackFavicon);
-
-// const trackScroll = () => {
-//   trackNavBarPosition("nav-bar");
-// };
-// const goToHome = () => {
-//   if (route.path !== "/") {
-//     window.location.href = "/";
-//   } else {
-//     scrollTop();
-//   }
-// };
-
-// animation
-const before = (el) => {
-  gsap.set(el, {
-    opacity: 0,
-  });
-};
-const entering = (el, done) => {
-  gsap.to(el, {
-    opacity: 1,
-    // duration: 1.0,
-    duration: 0.8,
-    delay: el.dataset.index * 0.2,
-    onComplete: done,
-  });
-};
-
-watchEffect(() => {
-  // if (route.path === "/") {
-  //   if (currentScreenWidth.value <= 640) {
-  //     if (
-  //       currentOffsetHeight.value >
-  //       screenHeight.value + heightOfNav.value / 2
-  //     ) {
-  //       // navbar style change on desktop view
-  //       navBgTextColor.value = "bg-white text-black dark:bg-[#121212]";
-  //       logo.value = blackWhiteFavicon;
-  //     } else {
-  //       navBgTextColor.value = "bg-black text-white";
-  //       logo.value = whiteBlackFavicon;
-  //     }
-  //   } else {
-  //     if (
-  //       currentOffsetHeight.value >
-  //       screenHeight.value - heightOfNav.value / 2
-  //     ) {
-  //       // navbar style change on desktop view
-  //       navBgTextColor.value = "bg-white text-black dark:bg-[#121212]";
-  //       logo.value = blackWhiteFavicon;
-  //     } else {
-  //       navBgTextColor.value = "bg-black text-white";
-  //       logo.value = whiteBlackFavicon;
-  //     }
-  //   }
-  // } else {
-  navBgTextColor.value = "bg-white text-black dark:bg-[#121212]";
-  logo.value = blackWhiteFavicon;
-  // }
-  if (enabled.value) {
-    logo.value = whiteBlackFavicon;
-  }
-});
-onMounted(() => {
-  // track nav bar position on initial render
-  // trackScroll();
-  // use scroll event to update the current position of nav bar
-  // window.addEventListener("scroll", trackScroll);
-  // const navigationBar = document.getElementById("nav-bar");
-  // screenHeight.value = window.innerHeight;
-  // heightOfNav.value = navigationBar ? navigationBar.offsetHeight : 0;
-  // currentScreenWidth.value = window.innerWidth;
-  loading.value = false;
-  setTimeout(() => {
-    trackTransitionCompleted();
-  }, 3000);
-});
-</script>
 <style lang="scss" scoped>
 .underAnimation {
   position: relative;

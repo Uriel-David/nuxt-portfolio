@@ -1,3 +1,23 @@
+<script setup>
+import { XMarkIcon, LinkIcon } from "@heroicons/vue/24/outline";
+const props = defineProps({
+  isOpen: {
+    type: Boolean,
+    default: false,
+  },
+  closeModal: {
+    type: Function,
+    default: () => {
+      return "Default function";
+    },
+  },
+  modalContent: {
+    type: Object,
+    default: () => {},
+  },
+});
+</script>
+
 <template>
   <Transition>
     <div
@@ -131,25 +151,7 @@
     </div>
   </Transition>
 </template>
-<script setup>
-import { XMarkIcon, LinkIcon } from "@heroicons/vue/24/outline";
-const props = defineProps({
-  isOpen: {
-    type: Boolean,
-    default: false,
-  },
-  closeModal: {
-    type: Function,
-    default: () => {
-      return "Default function";
-    },
-  },
-  modalContent: {
-    type: Object,
-    default: () => {},
-  },
-});
-</script>
+
 <style scoped>
 .v-enter-active,
 .v-leave-active {

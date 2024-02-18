@@ -1,3 +1,12 @@
+<script setup>
+const props = defineProps({
+  post: {
+    type: Object,
+    default: () => {},
+  },
+});
+</script>
+
 <template>
   <a
     :href="post.href"
@@ -24,11 +33,3 @@
     </div>
   </a>
 </template>
-<script setup>
-const props = defineProps({
-  post: {
-    type: Object,
-    default: () => {},
-  },
-});
-</script>

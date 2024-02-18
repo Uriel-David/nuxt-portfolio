@@ -1,8 +1,3 @@
-<template>
-  <Transition name="my-transition" @before-enter="beforeEnter" @enter="enter">
-    <slot></slot>
-  </Transition>
-</template>
 <script setup>
 import { gsap } from "gsap";
 const props = defineProps({
@@ -27,3 +22,10 @@ const enter = (el, done) => {
   });
 };
 </script>
+
+<template>
+  <Transition name="my-transition" @before-enter="beforeEnter" @enter="enter">
+    <slot></slot>
+  </Transition>
+</template>
+

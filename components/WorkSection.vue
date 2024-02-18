@@ -1,17 +1,3 @@
-<template>
-  <section id="works">
-    <h2 class="workTitle">Career Highlights</h2>
-    <div class="work-card-lane">
-      <CardsWorkCard
-        v-for="project in workingProjects"
-        :key="project.imgSrc"
-        :image="project.image"
-        :on-click-function="onClickFunction"
-        :content="project"
-      />
-    </div>
-  </section>
-</template>
 <script setup>
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -34,7 +20,6 @@ onMounted(() => {
       trigger: ".workTitle",
       start: "-100px center",
       end: "top center",
-      // markers: true,
     },
   });
   titleTl
@@ -48,12 +33,27 @@ onMounted(() => {
   ScrollTrigger.batch(".work-card-container", {
     start: "-250px center",
     end: "top center",
-    // markers: true,
     onEnter: (batch) =>
       gsap.to(batch, { opacity: 1, y: 0, autoAlpha: 1, stagger: 0.15 }),
   });
 });
 </script>
+
+<template>
+  <section id="works">
+    <h2 class="workTitle">Career Highlights</h2>
+    <div class="work-card-lane">
+      <CardsWorkCard
+        v-for="project in workingProjects"
+        :key="project.imgSrc"
+        :image="project.image"
+        :on-click-function="onClickFunction"
+        :content="project"
+      />
+    </div>
+  </section>
+</template>
+
 <style>
 .work-card-container {
   opacity: 0;

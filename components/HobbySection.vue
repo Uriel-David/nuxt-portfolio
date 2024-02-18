@@ -1,18 +1,3 @@
-<template>
-  <section id="hobbies">
-    <h2 class="hobbyTitle">Some of My Favourite Activities</h2>
-    <div class="hobby-grid">
-      <CardsHobby
-        v-for="item in hobbies"
-        :key="item"
-        :title="item.title"
-        :content="item.text"
-        :class-bg="item.classBg"
-        class="relative"
-      />
-    </div>
-  </section>
-</template>
 <script setup>
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -49,3 +34,19 @@ onMounted(() => {
   });
 });
 </script>
+
+<template>
+  <section id="hobbies">
+    <h2 class="hobbyTitle">Some of My Favourite Activities</h2>
+    <div class="hobby-grid">
+      <CardsHobby
+        v-for="item in hobbies"
+        :key="item"
+        :title="item.title"
+        :content="item.text"
+        :class-bg="item.classBg"
+        class="relative"
+      />
+    </div>
+  </section>
+</template>

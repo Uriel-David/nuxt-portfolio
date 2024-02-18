@@ -1,14 +1,4 @@
-<template>
-  <div :class="[classBg, 'hobby-card-container']">
-    <div>
-      <p>
-        {{ title }}
-      </p>
-      <p>{{ content }}</p>
-    </div>
-  </div>
-</template>
-<script lang="ts">
+<script>
 import { defineComponent } from "vue";
 export default defineComponent({
   props: {
@@ -28,3 +18,14 @@ export default defineComponent({
   setup() {},
 });
 </script>
+
+<template>
+  <div :class="[classBg, 'hobby-card-container']">
+    <div>
+      <p>
+        {{ title }}
+      </p>
+      <p>{{ content }}</p>
+    </div>
+  </div>
+</template>

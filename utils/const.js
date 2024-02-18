@@ -30,11 +30,11 @@ export function useConstants() {
       name: "Contact",
       href: "/contact",
     },
-    {
+    /* {
       id: 6,
       name: "Blog",
-      href: "https://my-blog-eazypau.vercel.app/",
-    },
+      href: "https://my-blog-uriel-portfolio.vercel.app/",
+    }, */
   ];
 
   const skillWithLogo = [
@@ -153,16 +153,6 @@ export function useConstants() {
       text: "To explore and expand my skillsets. \n Recently exploring Kotlin and ThreeJs",
       classBg: "bg-programming",
     },
-    // {
-    //   title: "Blog Writing",
-    //   text: "To pen down my thoughts",
-    //   classBg: "bg-blog",
-    // },
-    // {
-    //   title: "Grocery Shopping",
-    //   text: "Buy some of my favourite snacks",
-    //   classBg: "bg-grocer",
-    // },
     {
       title: "Listening to music",
       text: "Recent favourites: MWAM, HONNE, Forester, Milet and Yoasobi",
@@ -521,20 +511,6 @@ export function useConstants() {
         maxWidth: "max-w-[70%] md:max-w-[60%] 3xl:max-w-[55%]",
       },
       imageShowcase: [
-        // {
-        //   title: "Home Page Top Part",
-        //   src: "/work/cakerush-main.png",
-        //   alt: "Home Page Top Part",
-        //   width: "1918",
-        //   height: "2368",
-        // },
-        // {
-        //   title: "Home Page MultiTab Section",
-        //   src: "/work/cakerush-tabs.png",
-        //   alt: "Home Page MultiTab Section",
-        //   width: "1898",
-        //   height: "942",
-        // },
         {
           title: "Home Page",
           src: "/work/cakerush-homepage-revamp.png",

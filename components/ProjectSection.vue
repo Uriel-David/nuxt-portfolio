@@ -1,16 +1,3 @@
-<template>
-  <section class="project-section">
-    <h2 class="project-title">My Personal Projects</h2>
-    <div class="project-grid">
-      <CardsNewProject
-        v-for="project in projects"
-        :key="project"
-        :project-details="project"
-        :is-reverse="project.isReverse"
-      />
-    </div>
-  </section>
-</template>
 <script setup>
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -27,7 +14,6 @@ onMounted(() => {
       trigger: ".project-title",
       start: "-100px center",
       end: "top center",
-      // markers: true,
     },
   });
   titleTl
@@ -41,12 +27,26 @@ onMounted(() => {
   ScrollTrigger.batch(".project-card", {
     start: "-130px center",
     end: "top center",
-    // markers: true,
     onEnter: (batch) =>
       gsap.to(batch, { opacity: 1, y: 0, autoAlpha: 1, stagger: 0.15 }),
   });
 });
 </script>
+
+<template>
+  <section class="project-section">
+    <h2 class="project-title">My Personal Projects</h2>
+    <div class="project-grid">
+      <CardsNewProject
+        v-for="project in projects"
+        :key="project"
+        :project-details="project"
+        :is-reverse="project.isReverse"
+      />
+    </div>
+  </section>
+</template>
+
 <style>
 .project-card {
   opacity: 0;

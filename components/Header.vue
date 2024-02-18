@@ -1,38 +1,4 @@
-<template>
-  <header class="headerHeight">
-    <!-- <div>
-      <img
-        src="/wide-laptop-gradient-bg.webp"
-        sizes="(max-width: 768px) 50vw, (max-width: 1024px) 80vw, (max-width: 1439px) 100vw"
-        srcset="
-          /wide-laptop-gradient-bg-min.webp  768w,
-          /wide-laptop-gradient-bg.webp     1024w
-        "
-        alt="laptop with black background"
-      />
-    </div> -->
-    <TransitionGroup name="list" tag="div" class="header-bg">
-      <div v-for="rectang in columns" :key="rectang" :style="rectang"></div>
-      <img :class="showBgImg ? 'opacity-100' : 'opacity-0'" src="/red-blue.jpg" width="1920" height="1280"
-        alt="blue red fusion" />
-    </TransitionGroup>
-    <div class="content" :class="showContent ? 'opacity-100' : 'opacity-0'">
-      <h1 class="leading-3">
-        <span class="text-4xl md:text-5xl font-semibold">{{
-          introObj.lineOne
-        }}</span>
-        <br />
-        <span class="text-2xl md:text-3xl font-medium">{{
-          introObj.lineTwo
-        }}</span>
-        <br />
-        <span class="text-xl md:text-2xl">{{ introObj.lineThree }}</span>
-      </h1>
-    </div>
-  </header>
-</template>
 <script setup>
-// const loading = ref(true);
 const columns = ref([]);
 const counter = ref(0);
 const numOfColumns = ref(4);
@@ -57,8 +23,8 @@ const introObj = ref({
   lineThree: "",
 });
 const intro = [
-  "Po Yi Zhi",
-  "Software Developer in RISB",
+  "Uriel David",
+  "Software Developer",
   "I specialise in building web app that helps to solve real world challenges.",
 ];
 
@@ -143,11 +109,33 @@ onMounted(() => {
   setTimeout(() => {
     typeWriter()
   }, typeWriterDelay.value);
-  // loading.value = false;
-  // Promise.all([addSquare(), typeWriter()]);
 });
 
 </script>
+
+<template>
+  <header class="headerHeight">
+    <TransitionGroup name="list" tag="div" class="header-bg">
+      <div v-for="rectang in columns" :key="rectang" :style="rectang"></div>
+      <img :class="showBgImg ? 'opacity-100' : 'opacity-0'" src="/red-blue.jpg" width="1920" height="1280"
+        alt="blue red fusion" />
+    </TransitionGroup>
+    <div class="content" :class="showContent ? 'opacity-100' : 'opacity-0'">
+      <h1 class="leading-3">
+        <span class="text-4xl md:text-5xl font-semibold">{{
+          introObj.lineOne
+        }}</span>
+        <br />
+        <span class="text-2xl md:text-3xl font-medium">{{
+          introObj.lineTwo
+        }}</span>
+        <br />
+        <span class="text-xl md:text-2xl">{{ introObj.lineThree }}</span>
+      </h1>
+    </div>
+  </header>
+</template>
+
 <style lang="scss" scoped>
 .headerHeight {
   height: calc(100vh - 70px);

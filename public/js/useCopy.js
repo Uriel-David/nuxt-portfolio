@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const headerEl = document.querySelector("div#__nuxt div");
       const footerEl = document.querySelector("footer .copyright");
       const copyContainer = document.createElement("div");
-      const createCopy = `<p class="smth-fun">Inspired by <strong>Po Yi Zhi</strong></p>`;
+      const createCopy = `<p class="smth-fun">Inspired by <strong>Uriel David</strong></p>`;
       copyContainer.innerHTML = createCopy;
 
       if (footerEl && !footerEl.querySelector("p.smth-fun"))

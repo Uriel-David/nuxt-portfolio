@@ -1,3 +1,17 @@
+<script setup>
+import { TransitionRoot } from "@headlessui/vue";
+const props = defineProps({
+  projectDetails: {
+    type: Object,
+    default() {
+      return {};
+    },
+  },
+});
+
+let hovered = ref(false);
+</script>
+
 <template>
   <div
     class="project-card"
@@ -93,23 +107,7 @@
     </TransitionRoot>
   </div>
 </template>
-<script setup>
-import { TransitionRoot } from "@headlessui/vue";
-const props = defineProps({
-  // isReverse: {
-  //   type: Boolean,
-  //   default: false,
-  // },
-  projectDetails: {
-    type: Object,
-    default() {
-      return {};
-    },
-  },
-});
 
-let hovered = ref(false);
-</script>
 <style lang="scss" scoped>
 .imgContainer {
   height: 200px;
