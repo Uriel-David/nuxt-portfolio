@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /mailto:uriel.dqaa@gmail.com
+Disallow: /resume/my-resume.pdf
+
+Sitemap: http://www.uriel-portfolio.com/sitemap.xml

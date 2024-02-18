@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "name": "uriel-porfolio",
+  "author": {
+    "name": "Uriel David",
+    "url": "https://uriel-portfolio.com/"
+  },
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "node .output/server/index.mjs",
+    "lint": "eslint --ext \".ts,.js,.vue\" --ignore-path .gitignore ."
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.8.0",
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "nuxt": "^3.7.3",
+    "prettier": "^3.0.3",
+    "sass": "^1.67.0",
+    "sass-loader": "^13.3.2",
+    "typescript": "^5.3.3",
+    "vue-tsc": "^1.8.27"
+  },
+  "dependencies": {
+    "@headlessui/vue": "^1.7.16",
+    "@heroicons/vue": "^2.0.18",
+    "gsap": "^3.12.2"
+  }
+}
