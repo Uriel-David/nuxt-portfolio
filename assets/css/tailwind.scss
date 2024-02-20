@@ -126,6 +126,10 @@ header {
   a svg {
     @apply w-5 h-5 xl:w-6 xl:h-6 text-gray-700 dark:text-white fill-current hover:text-gray-600 dark:hover:text-gray-200;
   }
+
+  .resume {
+    @apply inline-flex items-center justify-center h-12 px-6 text-lg text-white font-medium bg-gradient-to-r transition duration-200 rounded shadow-md hover:shadow-gray-400 from-blue-700 to-blue-900 hover:from-blue-600 hover:to-blue-600;;
+  }
 }
 
 .summary-skill-list-container {

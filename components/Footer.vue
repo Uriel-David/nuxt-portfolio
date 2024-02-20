@@ -10,19 +10,19 @@ const CURRENT_YEAR = new Date().getFullYear();
       <div class="social-icons-and-navigation">
         <!-- social - start -->
         <div>
-          <a href="https://www.instagram.com/yzpo/" aria-label="Instagram" target="_blank" class="footerIcon">
+          <a href="https://www.instagram.com/_uriel_david_/" aria-label="Instagram" target="_blank" class="footerIcon">
             <IconsInstaIcon />
           </a>
 
-          <a href="https://www.facebook.com/yizhipo" aria-label="Facebook" target="_blank" class="footerIcon">
+          <a href="https://www.facebook.com/uriel.david.963" aria-label="Facebook" target="_blank" class="footerIcon">
             <IconsFacebookIcon />
           </a>
 
-          <a href="https://www.linkedin.com/in/yzpo/" aria-label="Linkden" target="_blank" class="footerIcon">
+          <a href="https://www.linkedin.com/in/uriel-david/" aria-label="Linkden" target="_blank" class="footerIcon">
             <IconsLinkedInIcon />
           </a>
 
-          <a href="https://github.com/eazypau" aria-label="Github" target="_blank" class="footerIcon">
+          <a href="https://github.com/Uriel-David" aria-label="Github" target="_blank" class="footerIcon">
             <IconsGithubIcon />
           </a>
         </div>

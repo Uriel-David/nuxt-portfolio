@@ -63,7 +63,6 @@ onMounted(() => {
       <Transition appear name="fadeIn">
         <NuxtLink v-if="!loading" href="/" class="home-button" aria-label="YZ.">
           <img :src="logo" width="40" height="40" alt="favicon" loading="lazy" />
-          <p>YZ.</p>
         </NuxtLink>
       </Transition>
     </div>

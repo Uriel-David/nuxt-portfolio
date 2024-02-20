@@ -88,9 +88,9 @@ export function useConstants() {
       height: 150,
     },
     {
-      imgUrl: "/logos/firebase-plain.svg",
-      name: "Firebase",
-      alt: "Firebase logo",
+      imgUrl: "/logos/gcp.svg",
+      name: "GCP",
+      alt: "gcp",
       width: 150,
       height: 150,
     },
@@ -98,6 +98,13 @@ export function useConstants() {
       imgUrl: "/logos/typescript-original.svg",
       name: "TypeScript",
       alt: "TypeScript logo",
+      width: 150,
+      height: 150,
+    },
+    {
+      imgUrl: "/logos/angular.svg",
+      name: "Angular",
+      alt: "angular",
       width: 150,
       height: 150,
     },
@@ -116,18 +123,32 @@ export function useConstants() {
       height: 150,
     },
     {
-      imgUrl: "/logos/shopify-liquid-logo.webp",
-      name: "Liquid",
-      alt: "Liquid logo",
+      imgUrl: "/logos/aws.svg",
+      name: "AWS",
+      alt: "AWS",
       width: 321,
       height: 315,
     },
     {
-      imgUrl: "/logos/shopify-b_w.webp",
-      name: "Shopify",
-      alt: "Shopify logo",
+      imgUrl: "/logos/php.svg",
+      name: "PHP",
+      alt: "php",
       width: 512,
       height: 512,
+    },
+    {
+      imgUrl: "/logos/laravel.svg",
+      name: "Laravel",
+      alt: "laravel",
+      width: 150,
+      height: 150,
+    },
+    {
+      imgUrl: "/logos/wordpress.svg",
+      name: "Wordpress",
+      alt: "wordpress",
+      width: 150,
+      height: 150,
     },
     {
       imgUrl: "/logos/jquery-original.svg",
@@ -136,454 +157,376 @@ export function useConstants() {
       width: 150,
       height: 150,
     },
+    {
+      imgUrl: "/logos/flutter.svg",
+      name: "Flutter",
+      alt: "flutter",
+      width: 150,
+      height: 150,
+    },
+    {
+      imgUrl: "/logos/java.svg",
+      name: "Java",
+      alt: "java",
+      width: 150,
+      height: 150,
+    },
   ];
   const hobbies = [
     {
-      title: "Drink Black tea",
-      text: "Best way to start the morning",
-      classBg: "bg-tea",
+      title: "Play video games",
+      text: "Recently I have been playing online games like LOL, CS GO and Yugioh Master Duel.",
+      classBg: "bg-joystick",
     },
     {
-      title: "Journaling",
-      text: "To pen down my thoughts, memories and interesting things that occur in life",
-      classBg: "bg-journaling",
+      title: "Chess",
+      text: "One of the activities I really enjoy is Chess, it helps to improve my conception and logic.",
+      classBg: "bg-chess",
     },
     {
       title: "Learning new technologies/framework",
-      text: "To explore and expand my skillsets. \n Recently exploring Kotlin and ThreeJs",
+      text: "I'm currently studying technologies like Go, Flutter and Jenkins, as well as new horizons with Python beyond Web development.",
       classBg: "bg-programming",
     },
     {
       title: "Listening to music",
-      text: "Recent favourites: MWAM, HONNE, Forester, Milet and Yoasobi",
+      text: "I love different types of musical genres, recently listening to music like Siamese, 80s/90s Rock and any good music.",
       classBg: "bg-music",
     },
   ];
+
   const projects = [
     {
       isReverse: true,
-      title: "Personal Blog",
+      title: "Arboreall",
       titleColor: "text-white",
       filterColor: "bg-slate-900 bg-opacity-60",
-      imageUrl: "/project-ss/blog-page.png",
+      imageUrl: "/project-ss/arboreall.png",
       description:
-        "A personal blog using NextJS and Notion API. It has code syntax highlight and image viewer.",
+        "Project still in its initial phase which aims to change the way companies and employees see themselves. I work within a team in which we developed this platform and my contribution comes from the backend and infrastructure developed so far.",
       techStack: [
-        "NextJS",
-        "TS",
-        "TailwindCSS",
-        "@notionhq/client",
-        "highlight.js",
-        "fslightbox-react",
+        "Amazon Web Services (AWS)",
+        "PHP",
+        "Vue.js",
+        "MySQL",
+        "Git",
+        "Laravel",
+        "Docker"
       ],
       isUrl: true,
-      urlLink: "https://my-blog-eazypau.vercel.app/",
-      githubLink: "https://github.com/eazypau/my-blog",
+      urlLink: "https://arboreall.com/",
+      /* githubLink: "#", */
     },
     {
       isReverse: true,
-      title: "Order Management App",
+      title: "React Course",
       titleColor: "text-white",
       filterColor: "bg-slate-900 bg-opacity-60",
-      imageUrl: "/project-ss/order-management.webp",
-      description: "An order creation and management web app.",
-      techStack: [
-        "NextJS",
-        "TS",
-        "TailwindCSS",
-        "Firebase",
-        "Zustand",
-        "MomentJs",
-        "HeadlessUI",
-        "i18",
-      ],
-      isUrl: true,
-      urlLink: "https://order-creation-web-app.vercel.app/en",
-      githubLink: "https://github.com/eazypau/order-creation-web-app",
-    },
-    {
-      isReverse: false,
-      title: "Eazy Chat App",
-      titleColor: "text-white",
-      filterColor: "bg-slate-900 bg-opacity-60",
-      imageUrl: "/project-ss/chatapp-ss.webp",
+      imageUrl: "/project-ss/react_course.png",
       description:
-        "A scalable real-time chat app designed to send and receive messages from users.",
+        "Developed by members of He4rt Developers, this repository is aimed at introducing beginner developers to the ReactJS universe with its content built for simple understanding.",
       techStack: [
-        "Vue",
-        "TS",
-        "Vite",
-        "TailwindCSS",
-        "Firebase",
-        "Pinia",
-        "Vue-router",
+        "React.js",
+        "JavaScript",
+        "Markdown",
       ],
       isUrl: true,
-      urlLink: "https://eazy-chat-app.netlify.app/login",
-      githubLink: "https://github.com/eazypau/chatApp",
-    },
-    {
-      isReverse: true,
-      title: "Spotify Clone",
-      titleColor: "text-white",
-      filterColor: "bg-slate-500 mix-blend-hard-light",
-      imageUrl: "/project-ss/spotify-ss.webp",
-      description:
-        "A Spotify clone web app. Built to view your saved and created playlist. It also can control your Spotify app playback state.",
-      techStack: [
-        "Vue",
-        "Vite",
-        "TailwindCSS",
-        "Vuex",
-        "Vue-router",
-        "Spotify Web API",
-      ],
-      isUrl: false,
-      githubLink: "https://github.com/eazypau/spotify-clone-web",
-    },
-    {
-      isReverse: false,
-      title: "Shopping Cart",
-      titleColor: "text-white",
-      filterColor: "bg-slate-700 bg-opacity-60",
-      imageUrl: "/project-ss/shopping-cart-ss.webp",
-      description:
-        "A static E-Commerce website to demonstrate the flow of a user purchase",
-      techStack: ["React", "SASS", "React-router"],
-      isUrl: true,
-      urlLink: "https://eazypau.github.io/shopping-cart-react/#/",
-      githubLink: "https://github.com/eazypau/shopping-cart-react",
-    },
-    {
-      isReverse: true,
-      title: "Kanban Board",
-      titleColor: "text-white",
-      filterColor: "bg-slate-800 bg-opacity-60",
-      imageUrl: "/project-ss/kanban-board.webp",
-      description: "A Kanban board to store the user's task list.",
-      techStack: [
-        "React",
-        "SASS",
-        "TailwindCSS",
-        "Local Storage",
-        "React-beautiful-dnd",
-      ],
-      isUrl: true,
-      urlLink: "https://eazypau.github.io/kanban-board-react/",
-      githubLink: "https://github.com/eazypau/kanban-board-react",
-    },
-    {
-      isReverse: false,
-      title: "Saloon Booking Web",
-      titleColor: "text-white",
-      filterColor: "bg-slate-900 bg-opacity-60",
-      imageUrl: "/project-ss/saloonbooking-ss.webp",
-      description:
-        "A door-to-door saloon appointment booking website allows users to book their appointment at any time.",
-      techStack: [
-        "Vue",
-        "TS",
-        "Vite",
-        "TailwindCSS",
-        "Firebase",
-        "Vuex",
-        "Vue-router",
-      ],
-      isUrl: true,
-      urlLink: "https://saloonbooking-95d49.web.app/",
-      githubLink: "https://github.com/eazypau/saloonbooking",
-    },
-    {
-      isReverse: true,
-      title: "Tic Tac Toe",
-      titleColor: "text-white",
-      filterColor: "bg-zinc-700 mix-blend-hard-light",
-      imageUrl: "/project-ss/tictactoe-ss.webp",
-      description: "A game of tic tac toe in HTML, CSS, and JavaScript.",
-      techStack: ["HTML", "CSS", "JavaScript"],
-      isUrl: true,
-      urlLink: "https://eazypau.github.io/tictactoe/",
-      githubLink: "https://github.com/eazypau/tictactoe",
+      urlLink: "https://github.com/he4rt/react4noobs",
+      githubLink: "https://github.com/he4rt/react4noobs",
     },
   ];
+
   const workingProjects = [
     {
       image: {
-        src: "/work/LVLY_logo.webp",
-        alt: "LVLY",
-        width: "410",
-        height: "117",
-        maxWidth: "max-w-[60%] md:max-w-[50%] 3xl:max-w-[55%]",
+        src: "/work/ufal.png",
+        alt: "UFAL",
+        width: "800",
+        height: "600",
+        maxWidth: "max-w-[18%] md:max-w-[30%] 3xl:max-w-[45%]",
       },
       imageShowcase: [
         {
-          title: "Cart Page - Step 1",
-          src: "/work/lvly-cart-s1.png",
-          alt: "Cart Page - Step 1",
+          title: "Landing Page - UFAL",
+          src: "/work/ufal_landing_page.png",
+          alt: "landing-page ufal",
           width: "800",
           height: "446",
         },
         {
-          title: "Cart Page - Step 2",
-          src: "/work/lvly-cart-s2.png",
-          alt: "Cart Page - Step 2",
+          title: "Moodle - UFAL",
+          src: "/work/moodle_ufal.png",
+          alt: "Moodle",
+          width: "800",
+          height: "446",
+        },
+        {
+          title: "Sie Web - UFAL",
+          src: "/work/sie_web.png",
+          alt: "Sie Web",
           width: "800",
           height: "404",
         },
+      ],
+      heading: "UFAL",
+      description: `As a part of the University's IT Sector, our primary focus was to develop and support internal applications/systems. We employed a versatile tech stack, utilizing Java (Spring/Spring Boot), PHP (Laravel and Symfony), and Node.js for backend development, while employing React.js, Angular, and jQuery for frontend development. Our databases included SQL (Oracle DB, MySQL, PostgreSQL) and NoSQL (MongoDB). Additional technologies like Dockers, Typescript, GCP, SOLID, Scrum/Kanban, Git, and GitHub were also part of our toolkit. The systems we supported were crucial to thousands of students, teachers, and employees, ensuring continuous online availability and seamless performance.`,
+      teamMembers: [
         {
-          title: "Cart Page - Step 3",
-          src: "/work/lvly-cart-s3.png",
-          alt: "Cart Page - Step 3",
+          name: "UFAL Team",
+          linkedIn: "https://ufal.br/ufal/institucional/orgaos-de-apoio/administrativo/nti",
+        },
+      ],
+      techStack: ["Java", "Laravel", "JQuery", "Symfony Framework", "HTML5", "AJAX", "Git", "PHP", "Spring Framework", "SASS", "PostgreSQL", "CSS3", "JavaScript"],
+      highlights: "Develop products and services for the University's internal sectors",
+      urls: [
+        {
+          name: "UFAL",
+          link: "https://ufal.br/",
+        },
+      ],
+    },
+    {
+      image: {
+        src: "/work/mobileum.png",
+        alt: "Mobileum",
+        width: "800",
+        height: "600",
+        maxWidth: "max-w-[15%] md:max-w-[25%] 3xl:max-w-[40%]",
+      },
+      imageShowcase: [
+        {
+          title: "Mobileum",
+          src: "/work/mobileum_portugal.png",
+          alt: "Mobileum",
           width: "800",
-          height: "637",
+          height: "446",
         },
+      ],
+      heading: "Mobileum",
+      description: `As a Product Support Engineer at Mobileum, I provided L3 support and conducted developments for the RAID product. I worked with JavaScript/JQuery, Java, Spring, Oracle Database/PL-SQL, and PostgreSQL technologies. My focus was on maintaining the product, supporting users worldwide, and optimizing performance. RAID is widely used in the Telecommunications sector by thousands of companies globally. I am passionate about delivering quality service and contributing to cutting-edge advancements in the industry. Let's connect to explore potential opportunities for collaboration.`,
+      teamMembers: [
         {
-          title: "Cart Page - Step 4",
-          src: "/work/lvly-cart-s4.png",
-          alt: "Cart Page - Step 4",
+          name: "Mobileum Team",
+          linkedIn: "https://www.mobileum.com/about/executive-team/",
+        },
+      ],
+      techStack: ["HTML5", "CSS3", "Java", "AJAX", "Git", "PostgreSQL", "Agile Methodologies", "PL/SQL", "Oracle SQL Developer"],
+      highlights: "Develop and support the product called Raid",
+      urls: [
+        {
+          name: "Mobileum",
+          link: "https://www.mobileum.com/",
+        },
+      ],
+    },
+    {
+      image: {
+        src: "/work/nex.jpeg",
+        alt: "Nex",
+        width: "800",
+        height: "600",
+        maxWidth: "max-w-[15%] md:max-w-[25%] 3xl:max-w-[40%]",
+      },
+      imageShowcase: [
+        {
+          title: "Nex - Vendus",
+          src: "/work/vendus.png",
+          alt: "Vendus",
           width: "800",
-          height: "520",
-        },
-      ],
-      heading: "LVLY",
-      // description: `LVLY is an online flower shop that offers beautiful, fragrant, fresh flowers for any occasion.
-      // With its wide selection of blooms, LVLY is the perfect choice for those who are looking for a unique and special
-      // way to show their love and appreciation. From classic roses to exotic orchids, LVLY has something for everyone.
-      // Customers can choose from a variety of bouquets, vases and boxes to make sure that their gift is as special and
-      // unique as they are. With same-day delivery options,  LVLY ensures that its customers can get the perfect
-      // arrangement for any occasion.`,
-      description: `LVLY is an online flower shop that offers beautiful, fragrant, fresh flowers for any occasion.
-      The aim was to work on the features for the cart page. Creating a step by step user interface to guide customer 
-      to checkout page. It allows the customer to pick their desired delivery date based on the postcode and suburb 
-      provided. Moreover, customer can also provide their card message, choose their desired jar message and greeting 
-      cards.`,
-      teamMembers: [
-        {
-          name: "Sylvia Chan",
-          linkedIn: "https://www.linkedin.com/in/sylviaachann/",
+          height: "446",
         },
         {
-          name: "Chan Sin Yee",
-          linkedIn: "https://www.linkedin.com/in/sin-yee-chan-2865bbaa/",
-        },
-      ],
-      techStack: ["HTML", "CSS", "JavaScript", "jQuery", "Shopify Liquid"],
-      highlights: "Cart page layout and functionality",
-      urls: [
-        {
-          name: "LVLY AU",
-          link: "https://www.lvly.com.au/",
-        },
-        {
-          name: "LVLY MY",
-          link: "https://www.lvly.my/",
-        },
-      ],
-    },
-    {
-      image: {
-        src: "/work/FC-MY.webp",
-        alt: "Flowerchimp",
-        width: "410",
-        height: "205",
-        maxWidth: "max-w-[60%] md:max-w-[50%] 3xl:max-w-[55%]",
-      },
-      imageShowcase: [
-        {
-          title: "Product Page",
-          src: "/work/fc-product-page.png",
-          alt: "Product Page",
-          width: "745",
-          height: "432",
-        },
-        {
-          title: "Product Page - Addon Product Modal",
-          src: "/work/fc-product-addon-modal.png",
-          alt: "Product Page - Addon Product Modal",
-          width: "1000",
-          height: "492",
-        },
-        {
-          title: "Cart Page",
-          src: "/work/fc-cart-page.png",
-          alt: "Cart Page",
-          width: "745",
-          height: "476",
-        },
-        {
-          title: "Cart Page - Empty Cart",
-          src: "/work/fc-empty-cart.png",
-          alt: "Cart Page - Empty Cart",
-          width: "745",
-          height: "351",
-        },
-      ],
-      heading: "Flowerchimp",
-      // description: `LVLY, Bloomeroo, and Flowerchimp are e-commerce websites for selling flower products.
-      // This was created using Shopify Liquid, HTML, CSS, and Javascript. Customers can choose their desired
-      // delivery date and timeslot for their order. It allows customers to select their desired flower products
-      // , add-on products, and gifts for various occasions. The online stores are available mainly in Southeast
-      // Asia and Australia.`,
-      description: `Flowerchimp is an online flower shop that offers a wide selection of beautiful bouquets and
-      arrangements to suit any occasion. Customers can choose from a variety of flowers, vases and boxes to make
-      sure their gift is special and unique. The aim was to work on revamping the product page and cart page. 
-      Making the user interface better and user friendly. The process also includes rewrite the functionality 
-      to the website slightly faster, improving user experience and making the codebase easier to maintain.`,
-      teamMembers: [
-        {
-          name: "Sylvia Chan",
-          linkedIn: "https://www.linkedin.com/in/sylviaachann/",
-        },
-        {
-          name: "Chan Sin Yee",
-          linkedIn: "https://www.linkedin.com/in/sin-yee-chan-2865bbaa/",
-        },
-      ],
-      techStack: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "jQuery",
-        "Shopify Liquid",
-        "Splide",
-        "Modaal",
-      ],
-      highlights: "Product Page Revamp & Cart Page Revamp",
-      urls: [
-        {
-          name: "Flowerchimp MY",
-          link: "https://www.flowerchimp.com/",
-        },
-      ],
-    },
-    {
-      image: {
-        src: "/work/BR_Logo.webp",
-        alt: "Bloomeroo",
-        width: "410",
-        height: "82",
-        maxWidth: "max-w-[70%] md:max-w-[60%] 3xl:max-w-[55%]",
-      },
-      imageShowcase: [
-        {
-          title: "Cart Page",
-          src: "/work/bl-cart.png",
-          alt: "Cart Page",
+          title: "Nex - Racius",
+          src: "/work/racius.png",
+          alt: "Racius",
           width: "800",
-          height: "543",
+          height: "446",
         },
       ],
-      heading: "Bloomeroo",
-      // description: `Bloomeroo is an e-commerce website that specializes in selling fresh flowers and providing same-day
-      // delivery in Australia. The company strives to provide customers with the best selection of flowers, from traditional
-      // roses to unique tropical and exotic blooms. Our same-day delivery service ensures that no matter where you are in
-      // the country, you can get the perfect bouquet delivered to your door. `,
-      description: `Bloomeroo is an e-commerce website that specializes in selling fresh flowers and providing same-day
-      delivery in Australia. The aim was to work on generating the date picker by postcode input for the cart page. This 
-      requires user to provide postcode in order to choose their desired delivery date. Moreover, customer can also 
-      provide their card message and choose addon products before going to checkout page.`,
-      techStack: ["HTML", "CSS", "JavaScript", "jQuery", "Shopify Liquid"],
+      heading: "Nex",
+      description: `As a versatile developer, I handled both backend and frontend tasks, making improvements and adding new features to the company's products. My tech stack included HTML, CSS, JavaScript, JQuery, PHP (Zend Framework/Laminas), MySQL, and AWS, with some Laravel implementations. Applying agile methodologies and advanced development principles like SOLID and Clean Code, our SaaS products became essential tools for thousands of companies.`,
       teamMembers: [
         {
-          name: "Sylvia Chan",
-          linkedIn: "https://www.linkedin.com/in/sylviaachann/",
-        },
-        {
-          name: "Chan Sin Yee",
-          linkedIn: "https://www.linkedin.com/in/sin-yee-chan-2865bbaa/",
+          name: "Nex Team",
+          linkedIn: "https://www.nex.pt/quem-somos/",
         },
       ],
-      highlights:
-        "Render selectable dates based on postcode input, website maintenance",
+      techStack: ["Laravel", "HTML5", "LAMP", "AJAX", "Git", "PHP", "Zend Framework", "Bootstrap", "Agile Methodologies", "CSS3", "Python", "JavaScript", "MySQL", "Amazon Web Services"],
+      highlights: "Develop and support Nex products such as Vendus and Racius",
       urls: [
         {
-          name: "Bloomeroo",
-          link: "https://www.bloomeroo.com.au/",
+          name: "Nex",
+          link: "https://www.nex.pt/",
         },
       ],
     },
     {
       image: {
-        src: "/work/cr-footer-logo.webp",
-        alt: "Cakerush MY",
-        width: "183",
-        height: "42",
-        maxWidth: "max-w-[70%] md:max-w-[60%] 3xl:max-w-[55%]",
+        src: "/work/spms.png",
+        alt: "spms",
+        width: "800",
+        height: "600",
+        maxWidth: "max-w-[15%] md:max-w-[25%] 3xl:max-w-[40%]",
       },
       imageShowcase: [
         {
-          title: "Home Page",
-          src: "/work/cakerush-homepage-revamp.png",
-          alt: "Home Page",
-          width: "1920",
-          height: "6199",
-        },
-        {
-          title: "Explosion Box Product Template",
-          src: "/work/cakerush-explosion-box-page.png",
-          alt: "Explosion Box Product Template",
-          width: "1920",
-          height: "4847",
+          title: "Landing Page - SPMS",
+          src: "/work/spms_landing_page.png",
+          alt: "spms",
+          width: "800",
+          height: "446",
         },
       ],
-      heading: "Cakerush MY",
-      description: `Cakerush MY is an innovative online platform offering a wide selection of exquisite cakes and pastries. 
-      With a user-friendly interface, customers can easily browse and customize their orders for any occasion. From classic 
-      flavors to personalized designs, each cake is meticulously crafted using the finest ingredients. Cakerush MY ensures 
-      timely delivery, bringing fresh and visually stunning cakes to your doorstep. Elevate your celebrations with their 
-      exceptional creations and exceptional service.`,
-      techStack: ["HTML", "CSS", "JavaScript", "jQuery", "Shopify Liquid"],
+      heading: "SNS/SPMS",
+      description: `As a full-stack developer at SNS/SPMS, I played a crucial role in developing applications for the PEM (Prescrição Eletrónica de Medicamentos / Electronic Prescription of Medicines) project, aimed at modernizing Portugal's healthcare system. In this position, I utilized a range of technologies, including Java, Spring/Spring Boot, JavaScript, JQuery, and Liferay. Working within an Agile team using Scrum, I contributed to building an application that serves the entire National Health system. My dedication to this project has been driven by a passion for improving healthcare services in the country.`,
       teamMembers: [
         {
-          name: "Sylvia Chan",
-          linkedIn: "https://www.linkedin.com/in/sylviaachann/",
+          name: "SPMS Team",
+          linkedIn: "https://www.linkedin.com/company/spms-epe/people/",
         },
       ],
-      highlights: "Home Page Revamp & Explosion Box Product Template Page",
+      techStack: ["Java", "HTML5", "Liferay", "Git", "Spring Framework", "jQuery", "CSS3", "PL/SQL", "JavaServer Pages (JSP)", "JavaScript", "Oracle Database"],
+      highlights: "Develop the main product - PEM - Electronic Prescription of Medicines",
       urls: [
         {
-          name: "Cakerush MY",
-          link: "https://www.cakerush.my/",
+          name: "SPMS",
+          link: "https://www.spms.min-saude.pt/",
         },
       ],
     },
     {
       image: {
-        src: "/work/thc-logo.webp",
-        alt: "The Hacker Collection Website",
-        width: "62",
-        height: "65",
-        maxWidth: "max-w-[70%] md:max-w-[60%] 3xl:max-w-[55%]",
+        src: "/work/gobuddy.jpeg",
+        alt: "gobuddy",
+        width: "800",
+        height: "600",
+        maxWidth: "max-w-[15%] md:max-w-[25%] 3xl:max-w-[40%]",
       },
       imageShowcase: [
         {
-          title: "Home Page",
-          src: "/work/thc-home-full.png",
-          alt: "Home Page",
-          width: "874",
-          height: "4796",
-        },
-        {
-          title: "Fundraising Page",
-          src: "/work/thc-fundraising.png",
-          alt: "Fundraising Page",
-          width: "805",
-          height: "5208",
+          title: "Landing Page - GoBuddy",
+          src: "/work/gobuddy_landing_page.png",
+          alt: "gobuddy",
+          width: "800",
+          height: "446",
         },
       ],
-      heading: "The Hacker Collection Website",
-      description: `The Hacker Collection (THC) is an innovative landing page website that offers a comprehensive
-      overview of a company's mission, products, and services. With a modern and user-friendly design, THC offers
-      an intuitive way to showcase a company's offerings and provides visually appealing and easy-to-understand
-      information. THC also offers a number of tools, such as a contact form, a blog, and registration forms, to
-      help customers interact with the company in a meaningful way.`,
-      techStack: ["Vue", "Nuxt3", "TailwindCSS", "HeadlessUI", "Heroicons"],
-      teamMembers: [],
-      highlights: "Manage and work with the team to create the entire website.",
+      heading: "GoBuddy App",
+      description: `As a Mobile Development Technical Consultant, I played a key role in the growth of the company's application, serving hundreds of users in the Porto region. My responsibilities included maintaining app integrity, developing new features, and collaborating with an international external team. I utilized Node.js and MongoDB for the backend, Ionic framework with Angular and React for the frontend, and AWS for cloud infrastructure. Additionally, I integrated essential services like Twilio, Stripe, and Magnifinance to enhance app functionality.`,
+      teamMembers: [
+        {
+          name: "GoBuddy Team",
+          linkedIn: "https://www.linkedin.com/company/spms-epe/people/",
+        },
+      ],
+      techStack: ["Angular", "Git", "React.js", "Node.js", "MongoDB", "Ionic Framework", "Amazon Web Services (AWS)"],
+      highlights: "Develop the main product - GoBuddy App",
       urls: [
         {
-          name: "THC Website",
-          link: "https://hackercollective.co/",
+          name: "GoBuddy",
+          link: "https://gobuddyapp.com/",
+        },
+      ],
+    },
+    {
+      image: {
+        src: "/work/nativeip.png",
+        alt: "nativeip",
+        width: "800",
+        height: "600",
+        maxWidth: "max-w-[15%] md:max-w-[25%] 3xl:max-w-[40%]",
+      },
+      imageShowcase: [
+        {
+          title: "Landing Page - Native IP",
+          src: "/work/nativeip_landing_page.png",
+          alt: "nativeip",
+          width: "800",
+          height: "446",
+        },
+      ],
+      heading: "Native IP",
+      description: `I provide services as a full-stack javascript developer, creating and making improvements and corrections to the company's products and developing new projects, using modern/legacy javascript technologies. I worked at the company as a freelancer. We use technologies such as AngularJs, React.js, Node.js and Express.js, Electron.js, React-Native and we work in an Agile environment, our product was mainly used by small and medium-sized companies as a cost-effective solution to replace complex callcenter and intelligently automate processes.`,
+      teamMembers: [
+        {
+          name: "Native IP Team",
+          linkedIn: "https://www.linkedin.com/company/native-ip/people/",
+        },
+      ],
+      techStack: ["HTML5", "GraphQL", "Express.js", "AngularJS", "Git", "React.js", "SASS", "Node.js", "CSS3", "JavaScript", "WebRTC", "Electron.js"],
+      highlights: "Develop the main product - Native and Infinity",
+      urls: [
+        {
+          name: "Native IP",
+          link: "https://nativeip.com.br/",
+        },
+      ],
+    },
+    {
+      image: {
+        src: "/work/comuniverse.jpeg",
+        alt: "comuniverse",
+        width: "800",
+        height: "600",
+        maxWidth: "max-w-[40%] md:max-w-[60%] 3xl:max-w-[75%]",
+      },
+      imageShowcase: [
+        {
+          title: "Landing Page - Comuniverse",
+          src: "/work/comuniverse_landing_page.png",
+          alt: "comuniverse",
+          width: "800",
+          height: "446",
+        },
+      ],
+      heading: "Comuniverse",
+      description: `As a full-stack developer, I played a key role in developing, refactoring, and managing projects in education, video streaming, and more. My expertise spans PHP, Laravel, JavaScript/TypeScript, Node.js, React.js, AWS, and Docker. I've also worked with Vue.js/Nuxt.js, Nest.js, C#/.NET, and React Native in an Agile team using Scrum/Kanban methodologies. Our applications reached thousands of users, serving various purposes. I continuously delivered high-quality solutions, meeting evolving user demands.`,
+      teamMembers: [
+        {
+          name: "Comuniverse Team",
+          linkedIn: "https://www.comuniverse.co/equipe/",
+        },
+      ],
+      techStack: ["Laravel", "HTML5", "LAMP", "TypeScript", "Vue.js", "Git", "PHP", "React.js", "SASS", "Nuxt.js", "Node.js", "CSS3", "MySQL", "Amazon Web Services (AWS)"],
+      highlights: "Develop the main product - Comuniverse English Platform and others products",
+      urls: [
+        {
+          name: "Comuniverse",
+          link: "https://comuniverse.co/",
+        },
+      ],
+    },
+    {
+      image: {
+        src: "/work/fidelizarte.jpg",
+        alt: "fidelizarte",
+        width: "800",
+        height: "600",
+        maxWidth: "max-w-[40%] md:max-w-[60%] 3xl:max-w-[75%]",
+      },
+      imageShowcase: [
+        {
+          title: "Landing Page - Fidelizarte",
+          src: "/work/fidelizarte_landing_page.png",
+          alt: "fidelizarte",
+          width: "800",
+          height: "446",
+        },
+      ],
+      heading: "Fidelizarte",
+      description: `As a web/mobile developer, I create web systems and apps for clients using technologies like PHP, Laravel, Node.js, MySQL, JavaScript, jQuery, Angular/Ionic, React and Vue.js. I handle full-cycle application development, including testing and deployment. I also have experience in customer interaction to ensure their needs are met.`,
+      teamMembers: [
+        {
+          name: "Fidelizarte Team",
+          linkedIn: "https://www.fidelizarte.pt/en/about-us",
+        },
+      ],
+      techStack: ["Laravel", "LAMP", "Angular", "Git", "PHP", "React.js", "jQuery", "Node.js", "Ionic Framework", "JavaScript", "MySQL", "Vue.js"],
+      highlights: "Develop and support Fidelizarte products",
+      urls: [
+        {
+          name: "Fidelizarte",
+          link: "https://www.fidelizarte.pt/",
         },
       ],
     },
@@ -591,77 +534,73 @@ export function useConstants() {
 
   const timeline = [
     {
-      date: "July 2023",
-      title: "Started @ JagaApp",
-      description: "Joined the JagaApp team",
+      date: "Jul 2023",
+      title: "Fidelizarte",
+      description: "In July 2023 I carried out some projects together with Fidelizarte, but in January 2024 I started working definitively with the team, after the end of the contract with Comuniverse.",
       // icon: "",
       link: {
-        text: "Visit JagaApp",
-        url: "https://jagasolution.com/jagaapp/",
+        text: "Fidelizarte",
+        url: "https://www.fidelizarte.pt/",
       },
     },
     {
-      date: "May 2022",
-      title: "Started @ Limitless Technologies",
-      description: "Joined the Limitless Technologies (LTG) team",
+      date: "Aug 2022",
+      title: "Comuniverse",
+      description: "While I was at PrimeIT, I worked on some side projects with Comuniverse, but in January 2023 I started working permanently with them.",
       // icon: "",
       link: {
-        text: "Visit LTG",
-        url: "https://limitless.my/",
+        text: "Comuniverse",
+        url: "https://www.comuniverse.co/",
       },
     },
     {
-      date: "October 2021",
-      title: "First Developer Role",
-      description:
-        "Joined The Hacker Collective (THC) Team as Frontend Web Developer",
+      date: "Jan 2022",
+      title: "Prime IT",
+      description: "A few months ago in Portugal, I started working at PrimeIT where I stayed for 1 year as an IT consultant working on various projects and clients.",
       // icon: "",
       link: {
-        text: "Visit THC",
-        url: "https://hackercollective.co/",
+        text: "Prime IT",
+        url: "https://www.primeit.pt/",
       },
     },
     {
-      date: "April 2021",
-      title: "Self Taught Journey Begins",
-      description:
-        "Started my journey in self learning programming (web development)",
-      // icon: "",
-    },
-    {
-      date: "August 2019",
-      title: "First Mechanical Engineer Role",
-      description:
-        "Began my job as a Mechanical Engineer in M&E Consultancy at Durianê Professional",
+      date: "Nov 2021",
+      title: "Flag",
+      description: "Professional training course to improve skills as a Full Stack developer.",
       // icon: "",
       link: {
-        text: "Visit Durianê Professional",
-        url: "https://www.duriane.com/",
+        text: "Flag",
+        url: "https://flag.pt/",
       },
     },
     {
-      date: "May 2019",
-      title: "Graduated University",
-      description:
-        "Completed my Bachelor's Degree in Mechanical Engineering at Multimedia University (MMU)",
-      // icon: "",
-    },
-    {
-      date: "March 2018",
-      title: "Internship",
-      description:
-        "Began an internship as assistent engineer at Protech Builders",
-      // icon: "",
-    },
-    {
-      date: "June 2015",
-      title: "Start University",
-      description:
-        "Began my study in Mechanical Engineering at Multimedia University (MMU)",
+      date: "Jun 2018",
+      title: "Universidade Federal de Alagoas - UFAL (Work)",
+      description: "I begin my journey as a Software Engineer in the University's development sector.",
       // icon: "",
       link: {
-        text: "Visit MMU",
-        url: "https://www.mmu.edu.my/",
+        text: "UFAL",
+        url: "https://ufal.br/",
+      },
+    },
+    {
+      date: "June 2016",
+      title: "Universidade Federal de Alagoas - UFAL (Education)",
+      description: "My training focused on the foundations of computing and mathematics oriented towards software development and research, but unfortunately I interrupted my training in the middle of the course for personal and work reasons.",
+      // icon: "",
+      link: {
+        text: "UFAL",
+        url: "https://ufal.br/",
+      },
+    },
+    {
+      date: "Jan 2013",
+      title: "SESI/SENAI - EBEP (Maceió-AL Unit)",
+      description: "Technical training in the area of Computer Networks (Course with CISCO CCNA training and certification).",
+      // icon: "",
+      link: {
+        text: "SENAI",
+        url: "https://al.senai.br/",
       },
     },
   ];

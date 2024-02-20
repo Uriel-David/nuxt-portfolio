@@ -10,12 +10,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        tea: "url('/hobbies/tea-cup.webp')",
+        joystick: "url('/hobbies/joystick.webp')",
         blog: "url('/hobbies/myblog.webp')",
-        music:
-          "url('/hobbies/negative-space-headphones-black-white-corey-blaz.webp')",
-        grocer: "url('/hobbies/grocer.webp')",
-        journaling: "url('/hobbies/journaling.webp')",
+        music: "url('/hobbies/headphones.webp')",
+        chess: "url('/hobbies/chess.webp')",
         programming: "url('/hobbies/programming.webp')",
       },
       minWidth: {

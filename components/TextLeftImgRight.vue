@@ -44,7 +44,7 @@ onMounted(() => {
           <h2 class="profile-title">Who am I?</h2>
           <div class="profile-description-container">
             <p>
-              I have 5 years of experience in IT, specifically just over 3 years as a developer. I have already worked on projects in several areas, such as Education, Health, Retail, among others. I have partial training in Computer Science and Mathematics, in addition to specific courses in the area of ​​professional training, as a developer and systems/network administrator.
+              I have 5 years of experience in IT. I have already worked on projects in several areas, such as Education, Health, Retail, among others. I have partial training in Computer Science and Mathematics, in addition to specific courses in the area of professional training, as a developer and systems/network administrator.
 
               Currently living in Europe, I'm working on international projects focusing mainly on web/mobile development, but always looking for new challenges and knowledge.
             </p>
@@ -60,33 +60,35 @@ onMounted(() => {
 
           <div class="summary-skill-list-container">
             <ul>
-              <li>JavaScript</li>
-              <li>Vue</li>
-              <li>TailwindCSS</li>
+              <li>PHP/Laravel</li>
+              <li>Node.js</li>
+              <li>AWS</li>
             </ul>
             <ul>
-              <li>Shopify Liquid</li>
-              <li>React</li>
+              <li>React/React-Native</li>
+              <li>Vue.js/Nuxt.js</li>
               <li>TypeScript</li>
             </ul>
           </div>
 
           <div class="profile-social-icons">
-            <a href="https://www.instagram.com/yzpo/" aria-label="Instagram" target="blank">
+            <a href="https://www.instagram.com/_uriel_david_/" aria-label="Instagram" target="blank">
               <IconsInstaIcon />
             </a>
 
-            <a href="https://www.facebook.com/yizhipo" aria-label="Facebook" target="blank">
+            <a href="https://www.facebook.com/uriel.david.963" aria-label="Facebook" target="blank">
               <IconsFacebookIcon />
             </a>
 
-            <a href="https://www.linkedin.com/in/yzpo/" aria-label="Linkden" target="blank">
+            <a href="https://www.linkedin.com/in/uriel-david/" aria-label="Linkden" target="blank">
               <IconsLinkedInIcon />
             </a>
 
-            <a href="https://github.com/eazypau" aria-label="Github" target="blank">
+            <a href="https://github.com/Uriel-David" aria-label="Github" target="blank">
               <IconsGithubIcon />
             </a>
+
+            <a class="resume" href="resume/my-resume.pdf" aria-label="my-resume" download> Download my resume here! </a>
           </div>
         </div>
 
